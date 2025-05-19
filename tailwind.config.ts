@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,16 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom Helios colors
+				helios: {
+					gold: '#DAA520',
+					'gold-light': '#F5D76E',
+					'gold-dark': '#B8860B',
 				}
+			},
+			backgroundImage: {
+				'gold-texture': "url('/lovable-uploads/88b88a47-c451-44ea-8bc3-2ec37fe52bc7.png')",
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +94,19 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+				shimmer: {
+					'0%': { backgroundPosition: '-500px 0' },
+					'100%': { backgroundPosition: '500px 0' },
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				shimmer: 'shimmer 2.5s infinite linear',
+			},
+			fontFamily: {
+				serif: ['Georgia', 'Times New Roman', 'serif'],
 			}
 		}
 	},
